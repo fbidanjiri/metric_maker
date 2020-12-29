@@ -112,6 +112,7 @@ action :install do
 
   gem_package 'aws-sdk-cloudwatch' do
     options '--no-ri --no-rdoc'
+    version '1.46.0'
     not_if {node['platform'] == 'windows'}
   end
 
